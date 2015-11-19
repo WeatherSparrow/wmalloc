@@ -12,6 +12,10 @@ wmallocは以下の構造により構成されています。
 * SysStack
 * SysQueue
 
+## 使い方
+`make wmtest`でテスト用のサンプルソースがビルドされます。実行すると20,000個の要素をpush/popするデモを行います。
+機能を利用するには`wmalloc.h`をインクルードし、サンプルソース、および以下の説明にしたがってください。
+
 ## SysMem / CompleMem
 wmallocを使うには、SysMemとCompleMemが必要になります。SysMemはwmallocにより確保されるメモリ領域、CompleMemは
 wmalloc全体で用いる構造体を管理するためのメモリ領域を管理します。以下の手順により、wmallocに必要な構造体をアクティベートしてください。
