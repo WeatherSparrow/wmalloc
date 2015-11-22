@@ -1,6 +1,6 @@
 # wmalloc
 
-wmallocはWolf Frameworkのために実装されたメモリアロケータです。固定長の領域を動的に確保・解放することに特化しており、
+wmallocはWulf Frameworkのために実装されたメモリアロケータです。固定長の領域を動的に確保・解放することに特化しており、
 C/C++のmallocとは少し役割や様相が異なりますが、十分に実用的な性能を有しています。具体的には、一般のmallocはメモリの確保に
 最悪でO(n)の計算量を必要とするのに対し、wmallocは最悪でもほぼO(1)の計算量しか要さず、また、メモリの断片化も比較的軽微なものに
 止まります。
@@ -21,7 +21,7 @@ wmallocを使うには、SysMemとCompleMemが必要になります。SysMemはw
 wmalloc全体で用いる構造体を管理するためのメモリ領域を管理します。以下の手順により、wmallocに必要な構造体をアクティベートしてください。
 
 ```c++:sample.cpp
-using namespace Wolf::Sys;
+using namespace Wulf::Sys;
 
 int main(void)
 {
@@ -41,7 +41,7 @@ SysMemとCompleMemは対になっており、両方を確保してcombineによ�
 以降、解放するとき以外はCompleMemは使いません。解放は次のコードで行います。
 
 ```c++:sample.cpp
-using namespace Wolf:Sys;
+using namespace Wulf:Sys;
 
 int main(void)
 {

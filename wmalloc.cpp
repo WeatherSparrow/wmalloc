@@ -21,7 +21,7 @@
 
 #include "wmalloc.h"
 
-namespace Wolf {
+namespace Wulf {
     namespace Sys {
         const size_t complemem_blocksize_default = 8;
 

@@ -33,7 +33,7 @@ typedef int (*Error_f)(int, const void *);
 typedef uintptr_t wmptr_t;
 typedef void* Pointer;
 
-namespace Wolf {
+namespace Wulf {
     namespace Sys {
         typedef struct complemem_t* CompleMem;
         typedef struct sysmem_t* SysMem;
